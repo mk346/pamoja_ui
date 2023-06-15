@@ -9,10 +9,10 @@ const Hero = () => {
                 <p className='md:text-2xl sm:text-2xl text-orange-500 font-bold p-2'>Welcome to Pamoja HomeFibre</p>
                 <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>The #1 Internet Solutions Provider</h1>
                 <div className='flex justify-center items-center'>
-                    <p className='md:text-2xl sm:text-2xl text-xl font-bold py-4'>Fast,Flexible and Dependable solutions for </p>
+                    <p className='md:text-2xl sm:text-2xl text-xl font-bold py-4'>Fast,Flexible and Dependable solutions for</p>
                     <Typed
                     className='md:text-2xl sm:text-2xl text-xl font-bold md:pl-4 pl-2'
-                        strings={['Fibre internet','CCTV installation','IPTV']}
+                        strings={['Fibre internet.','CCTV installation.','IPTV.']}
                         typeSpeed={50}
                         backSpeed={50}
                         loop

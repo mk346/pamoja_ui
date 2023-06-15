@@ -15,7 +15,7 @@ const Cards = () => {
 
 
                     </div>
-                    <button className='bg-orange-500 w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Inquire</button>
+                    <button className='bg-orange-500 w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>WiFi Packages</button>
 
 
                 </div>

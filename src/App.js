@@ -5,6 +5,7 @@ import About from "./components/About";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 
+
 function App() {
     return(
         <div>
@@ -13,6 +14,7 @@ function App() {
             <About />
             <Cards />
             <Footer />
+
 
     </div>
     );
