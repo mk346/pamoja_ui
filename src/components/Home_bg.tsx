@@ -1,12 +1,12 @@
 import React from "react";
 
-// import "./contact.css";
 
-function Contacts() {
+
+function Home_bg() {
     const header = [
         {
             url:
-                "https://images.unsplash.com/photo-1586769852044-692d6e3703f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+                "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
         },
     ];
 
@@ -25,4 +25,4 @@ function Contacts() {
         </div>
     );
 }
-export default  Contacts;
+export default  Home_bg;
