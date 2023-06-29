@@ -1,47 +1,72 @@
 import React from "react"
-import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import "../styles.css"
+// import "./App.css";
+import { v4 as uuidv4 } from "uuid";
+import Card from "../components/Card.tsx";
+import Carousel from "../components/Carousel";
+import Footer from "../components/Footer";
 
-const carousel = (slider) => {
-    const z = 300
-    function rotate() {
-        const deg = 360 * slider.track.details.progress
-        slider.container.style.transform = `translateZ(-${z}px) rotateY(${-deg}deg)`
-    }
-    slider.on("created", () => {
-        const deg = 360 / slider.slides.length
-        slider.slides.forEach((element, idx) => {
-            element.style.transform = `rotateY(${deg * idx}deg) translateZ(${z}px)`
-        })
-        rotate()
-    })
-    slider.on("detailsChanged", rotate)
-}
 
-export default function App() {
-    const [sliderRef] = useKeenSlider(
+
+function Internet() {
+    let cards = [
         {
-            loop: true,
-            selector: ".carousel__cell",
-            renderMode: "custom",
-            mode: "free-snap",
+            key: uuidv4(),
+            content: (
+                <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/convertplus_thumbnail.jpg"
+                title="5mbps"
+                Text="the speed is 5mbps"/>
+            )
         },
-        [carousel]
-    )
+        {
+            key: uuidv4(),
+            content: (
+                <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/acf_pro.png"
+                      title="10mbps"
+                      Text="this is 10mbps"  />
 
+            )
+        },
+        {
+            key: uuidv4(),
+            content: (
+                <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/layer_slider_plugin_thumb.png"
+                      title="15mbps"
+                      Text="this is 15mbps"  />
+
+            )
+        },
+        {
+            key: uuidv4(),
+            content: (
+                <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png"
+                      title="20mbps"
+                      Text="this is 20mbps"  />
+            )
+        },
+        {
+            key: uuidv4(),
+            content: (
+                <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2019/01/pwa_880_660.jpg"
+                      title="30mbps"
+                      Text="this is 30mbps"  />
+            )
+        }
+    ];
     return (
-        <div className="wrapper">
-            <div className="scene">
-                <div className="carousel keen-slider" ref={sliderRef}>
-                    <div className="carousel__cell number-slide1"><img src="../assets/img_1.jpg"/></div>
-                    <div className="carousel__cell number-slide2">2</div>
-                    <div className="carousel__cell number-slide3">3</div>
-                    <div className="carousel__cell number-slide4">4</div>
-                    <div className="carousel__cell number-slide5">5</div>
-                    <div className="carousel__cell number-slide6">6</div>
-                </div>
-            </div>
+        <div className="">
+            <Carousel
+                cards={cards}
+                height="500px"
+                width="100%"
+                margin="0 auto"
+                offset={200}
+                showArrows={false}
+            />
+            <Footer />
         </div>
-    )
+    );
 }
+
+export default Internet;
