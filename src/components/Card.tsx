@@ -5,10 +5,11 @@ import Button from "./Button";
 
 interface CardProps {
     imagen: string;
+    title: string; // Add a prop for the title
     Text: React.ReactNode;
 }
 
-function Card({ imagen, Text }: CardProps) {
+function Card({ imagen, title, Text }: CardProps) {
     const [show, setShown] = useState(false);
 
     const props3 = useSpring({
@@ -27,8 +28,8 @@ function Card({ imagen, Text }: CardProps) {
             onMouseLeave={() => setShown(false)}
         >
             <img src={imagen} alt="" />
-            <h2>Title</h2>
-            <p>{Text}</p>
+            <h2 className="mb-4 text-2xl font-black text-white text-center">{title}</h2> {/* Use the 'title' prop */}
+            <p className="text-black fw-bold" >{Text}</p>
             <div className={Styles.btnn}>
                 <Button text="Request" />
             </div>

@@ -47,11 +47,11 @@ const Footer = () => {
                         {/*    /!*        fill="white"/>*!/*/}
                         {/*    /!*</svg>*!/*/}
                         </div>
-                        <a className="hidden md:block cursor-pointer text-gray-600 hover:text-orange-500 uppercase">About</a>
-                        <a className="hidden md:block cursor-pointer text-gray-600 hover:text-orange-500 uppercase">Services</a>
-                        <a className="hidden md:block cursor-pointer text-gray-600 hover:text-orange-500 uppercase">Why
+                        <a className="hidden md:block cursor-pointer text-white hover:text-orange-500 uppercase">About</a>
+                        <a className="hidden md:block cursor-pointer text-white hover:text-orange-500 uppercase">Services</a>
+                        <a className="hidden md:block cursor-pointer text-white hover:text-orange-500 uppercase">Why
                             us</a>
-                        <a className="hidden md:block cursor-pointer text-gray-600 hover:text-orange-500 uppercase">Contact</a>
+                        <a className="hidden md:block cursor-pointer text-white hover:text-orange-500 uppercase">Contact</a>
                         <div className="flex flex-row space-x-8 items-center justify-between">
                             <a href="">
                                 <svg width="12" height="12" viewBox="0 0 6 12" fill="none"
@@ -86,7 +86,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <hr className="border-gray-600"/>
-                    <p className="w-full text-center my-12 text-gray-600">Copyright © 2023 Pamoja Home Fiber | All rights reserved.</p>
+                    <p className="w-full text-center my-12 text-white">Copyright © 2023 Pamoja Home Fiber | All rights reserved.</p>
                 </div>
             </div>
         </div>

@@ -1,13 +1,14 @@
 .btn {
-    background-color: orange;
-    color: #fff;
+    background-color: black;
+    color: white;
     border: none;
     outline: none;
     font-size: 1.2rem;
     border-radius: 10px;
     padding: 11px 1rem;
-    /* margin: 0 0.5rem ; */
     width: 7.5rem;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    /* Added margin auto to center horizontally */
 }

@@ -1,7 +1,11 @@
 import React from "react"
 import "keen-slider/keen-slider.min.css"
 import "../styles.css"
-// import "./App.css";
+import bronzeImage from "../assets/bronze.png";
+import silverImage from "../assets/silver.png";
+import goldImage from "../assets/gold.png";
+import platinumImage from "../assets/platinum.png";
+import diamondImage from "../assets/diamond.png";
 import { v4 as uuidv4 } from "uuid";
 import Card from "../components/Card.tsx";
 import Carousel from "../components/Carousel";
@@ -14,43 +18,43 @@ function Internet() {
         {
             key: uuidv4(),
             content: (
-                <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/convertplus_thumbnail.jpg"
-                title="5mbps"
-                Text="the speed is 5mbps"/>
+                <Card imagen={bronzeImage}
+                title="BRONZE"
+                Text="Perfect for light internet users and casual browsing."/>
             )
         },
         {
             key: uuidv4(),
             content: (
-                <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/acf_pro.png"
-                      title="10mbps"
-                      Text="this is 10mbps"  />
+                <Card imagen={silverImage}
+                      title="SILVER"
+                      Text="You can stream HD videos,music and work efficiently from home."  />
 
             )
         },
         {
             key: uuidv4(),
             content: (
-                <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/layer_slider_plugin_thumb.png"
-                      title="15mbps"
-                      Text="this is 15mbps"  />
+                <Card imagen={goldImage}
+                      title="GOLD"
+                      Text="Enjoy lag-free streaming, smooth online gaming, and speedy downloads"  />
 
             )
         },
         {
             key: uuidv4(),
             content: (
-                <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png"
-                      title="20mbps"
-                      Text="this is 20mbps"  />
+                <Card imagen={platinumImage}
+                      title="PLATINUM"
+                      Text="Engage in competitive online gaming and handle bandwidth-intensive tasks effortlessly."  />
             )
         },
         {
             key: uuidv4(),
             content: (
-                <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2019/01/pwa_880_660.jpg"
-                      title="30mbps"
-                      Text="this is 30mbps"  />
+                <Card imagen={diamondImage}
+                      title="DIAMOND"
+                      Text="Unleash the full potential of your online activities with our Diamond package."  />
             )
         }
     ];
