@@ -41,8 +41,8 @@ export function FaqWithImage({ placeholderTexts }: FaqWithImageProps) {
                         <Image src={photo} alt="Frequently Asked Questions" />
                     </Col>
                     <Col span={12} md={6}>
-                        <Title order={2} ta="left" className={classes.title}>
-                            Frequently Asked Questions
+                        <Title order={2} ta="left" className={`${classes.title} text-orange-500`}>
+                        Frequently Asked Questions
                         </Title>
 
                         <Accordion chevronPosition="right" defaultValue="reset-password" variant="separated">
