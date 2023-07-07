@@ -1,55 +1,49 @@
 import PlanCard from "./PlanCard";
+import image1 from "../assets/img_1.jpg";
+import image2 from "../assets/img_2.jpg";
+import image3 from "../assets/img_3.jpg";
+
+
+
 
 export default function Pricing() {
 
     return(
         <div className="flex flex-col items-center bg-black p-4">
             <div className="mb-2 mt-12 text-center">
-                <h1 className="mb-4 text-7xl font-black text-white">Fibre Packages</h1>
-                <p className="text-lg text-white">Choose the right package for you</p>
+                <h1 className="mb-4 text-7xl font-black text-orange-500">Customer Reviews</h1>
+                <p className="text-2xl text-white">We're that good! This is what our customers have to say</p>
 
 
             </div>
             <div className="flex flex-col gap-8 p-10 xl:flex-row">
                 <PlanCard
-                    price="2000"
-                    color="cyan"
-                    name="5mbps"
-                    description="Get internet at 5mbps"
-                    features={["Fast Web Browsing","Internet Surfing & Email","Unlimited for 30 Days"]}
-                    btnText="START"
+                    imageSrc={image1}
+                    price="Kijana Wamalwa"
+                    color="#f97316" // Set the color to #f97316
+                    description="The pricing plans are affordable, and the customer service is top-notch. Pamoja Home Fiber has made our online activities much more enjoyable and hassle-free"
                 />
+
                 <PlanCard
-                    price="2500"
-                    color="pink"
-                    name="10mbps"
-                    description="Get internet at 10mbps"
-                    features={["Music Streaming","HD Streaming","Fast Video Downloading"]}
-                    btnText="START"
+                    imageSrc={image2}
+
+                    price="Tom Mboya"
+                    color="gray"
+
+                    description="I have been using Pamoja Home Fiber for over a year now, and I couldn't be happier with the service. The internet speed is consistently fast, allowing me to stream movies, work from home, and video call without any interruptions"
+
+
                 />
+
                 <PlanCard
-                    price="2800"
-                    color="orange"
-                    name="15mbps"
-                    description="Get internet at 15mbps"
-                    features={["1 user","2projects","5gb"]}
-                    btnText="START"
-                />
-                <PlanCard
-                    price="3500"
-                    color="green"
-                    name="20mbps"
-                    description="Get internet at 20mbps"
-                    features={["Social Media","Video conferencing","File downloads and uploads"]}
-                    btnText="START"
-                />
-                <PlanCard
-                    price="4500"
-                    color="red"
-                    name="30mbps"
-                    description="Get internet at 30mbps"
-                    features={["CCTV Capability","Multiple Device Streaming","Online Gaming"]}
-                    btnText="START"
+                    imageSrc={image3}
+
+                    price="Mudavadi"
+                    color="#f97316"
+
+                    description=" Whether I'm gaming online, watching HD videos, or working on large files, Pamoja Home Fiber delivers a reliable and lag-free connection."
+
+
                 />
 
             </div>
