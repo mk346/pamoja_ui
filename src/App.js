@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Internet from './pages/Internet';
-import Navbar from "./components/Navbar";
+
 
 
 
@@ -12,7 +12,7 @@ function App() {
     return (
         <>
 
-                <Navbar />
+
                 <Routes>
 
                 {/* Define the routes */}

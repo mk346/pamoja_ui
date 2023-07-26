@@ -9,7 +9,10 @@ import diamondImage from "../assets/diamond.png";
 import { v4 as uuidv4 } from "uuid";
 import Card from "../components/Card.tsx";
 import Carousel from "../components/Carousel";
+import Search from "../components/Search";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Cable from "../components/Cable";
 
 
 
@@ -59,7 +62,10 @@ function Internet() {
         }
     ];
     return (
+
         <div className="">
+            <Navbar />
+            <Cable />
             <Carousel
                 cards={cards}
                 height="500px"
@@ -68,6 +74,7 @@ function Internet() {
                 offset={200}
                 showArrows={false}
             />
+            <Search />
             <Footer />
         </div>
     );

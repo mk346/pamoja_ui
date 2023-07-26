@@ -1,7 +1,7 @@
 import PlanCard from "./PlanCard";
-import image1 from "../assets/img_1.jpg";
-import image2 from "../assets/img_2.jpg";
-import image3 from "../assets/img_3.jpg";
+import girl from "../assets/girl.jpg";
+import boy from "../assets/boy.jpg";
+import man from "../assets/man.jpg";
 
 
 
@@ -16,18 +16,18 @@ export default function Pricing() {
 
 
             </div>
-            <div className="flex flex-col gap-8 p-10 xl:flex-row">
+            <div className="flex flex-col gap-8 p-10 xl:flex-row text-white">
                 <PlanCard
-                    imageSrc={image1}
-                    price="Kijana Wamalwa"
+                    imageSrc={girl}
+                    price="MICHELLE AMANI"
                     color="#f97316" // Set the color to #f97316
                     description="The pricing plans are affordable, and the customer service is top-notch. Pamoja Home Fiber has made our online activities much more enjoyable and hassle-free"
                 />
 
                 <PlanCard
-                    imageSrc={image2}
+                    imageSrc={boy}
 
-                    price="Tom Mboya"
+                    price="MOSES OMONDI"
                     color="gray"
 
                     description="I have been using Pamoja Home Fiber for over a year now, and I couldn't be happier with the service. The internet speed is consistently fast, allowing me to stream movies, work from home, and video call without any interruptions"
@@ -36,9 +36,9 @@ export default function Pricing() {
                 />
 
                 <PlanCard
-                    imageSrc={image3}
+                    imageSrc={man}
 
-                    price="Mudavadi"
+                    price="GIDEON MURIMI"
                     color="#f97316"
 
                     description=" Whether I'm gaming online, watching HD videos, or working on large files, Pamoja Home Fiber delivers a reliable and lag-free connection."

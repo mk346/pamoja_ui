@@ -7,6 +7,7 @@ import Accordion from "../components/Accordion";
 import Pricing from "../components/Pricing";
 import '../styles.css';
 import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
 
 
 
@@ -16,6 +17,7 @@ import Hero from "../components/Hero";
 function Home() {
     return(
         <div>
+            <Navbar/>
             <Hero />
             <About />
             <Cards />

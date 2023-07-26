@@ -2,17 +2,16 @@ import React from "react";
 import Contacts from "../components/Contacts";
 import Footer from "../components/Footer";
 import Photo from "../components/Photo";
-// import Map from "../components/Map";
+import Navbar from "../components/Navbar";
 
 
 
 function Contact() {
     return (
         <div>
-
+           <Navbar/>
            <Photo />
             <Contacts />
-            {/*<Map />*/}
             <Footer />
 
         </div>

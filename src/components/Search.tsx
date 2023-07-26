@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contacts = () => {
+const Search = () => {
     return (
         <>
             <section className="bg-black py-20 lg:py-[120px] overflow-hidden relative z-10">
@@ -9,11 +9,11 @@ const Contacts = () => {
                         <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
                             <div className="mb-12 max-w-[570px] lg:mb-0">
 
-                                <h2 className="mb-6 text-[32px] font-bold uppercase text-orange-500 sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-                                    GET IN TOUCH WITH US
+                                <h2 className="mb-5 text-[32px] font-bold uppercase text-orange-500 sm:text-[30px] lg:text-[36px] xl:text-[30px]">
+                                    IS YOUR AREA CONNECTED?
                                 </h2>
                                 <p className="text-white leading-relaxed mb-9">
-                                    We value our customers and are committed to providing excellent service and support. Whether you have questions, need assistance, or want to inquire about our fiber optic services, our team is here to help. Feel free to contact us through any of the provided channels, and we'll be happy to assist you with your inquiries and provide the information you need.
+                                    KINDLY ENTER YOUR JURISDICTION TO ESTABLISH WHETHER THERE'S COVERAGE IN YOUR REGION
                                 </p>
                                 <div className="mb-8 flex w-full max-w-[370px]">
                                     <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -27,7 +27,7 @@ const Contacts = () => {
                                         </svg>
                                     </div>
                                     <div className="w-full">
-                                        <h4 className="mb-1 text-xl font-bold text-orange-500">
+                                        <h4 className="mb-1 text-xl font-bold text-white">
                                             Our Location
                                         </h4>
                                         <p className="text-white">
@@ -50,7 +50,7 @@ const Contacts = () => {
                                         </svg>
                                     </div>
                                     <div className="w-full">
-                                        <h4 className="mb-1 text-xl font-bold text-orange-500">
+                                        <h4 className="mb-1 text-xl font-bold text-white">
                                             Phone Number
                                         </h4>
                                         <p className="text-white">
@@ -70,7 +70,7 @@ const Contacts = () => {
                                         </svg>
                                     </div>
                                     <div className="w-full">
-                                        <h4 className="mb-1 text-xl font-bold text-orange-500">
+                                        <h4 className="mb-1 text-xl font-bold text-white">
                                             Email Address
                                         </h4>
                                         <p className="text-white">
@@ -82,43 +82,44 @@ const Contacts = () => {
                         </div>
                         <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
 
-                            <div className="relative p-8 bg-orange-500 rounded-lg shadow-lg sm:p-12">
+                            <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
                                 <form>
-                                    <ContactInputBox
-                                        type="text"
-                                        name="name"
-                                        placeholder="Your Name"
+                                    <select name="county" className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                                        <option value="">Select County</option>
+                                        <option value="Nairobi City">Nairobi City</option>
+                                        <option value="Westlands">Westlands</option>
+                                        <option value="Dagoretti">Dagoretti</option>
+                                        {/* Add other counties in Nairobi here */}
+                                    </select>
 
+                                    <select name="county" className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                                        <option value="">Enter Estate/Building Name</option>
+                                        <option value="Nairobi City">Nairobi City</option>
+                                        <option value="Westlands">Westlands</option>
+                                        <option value="Dagoretti">Dagoretti</option>
 
-                                    />
-                                    <ContactInputBox
-                                        type="text"
-                                        name="email"
-                                        placeholder="Your Email"
-                                    />
-                                    <ContactInputBox
-                                        type="text"
-                                        name="phone"
-                                        placeholder="Your Phone"
-                                    />
-                                    <ContactTextArea
-                                        placeholder="Your Message"
-                                        name="details"
-                                        defaultValue=""
-                                        row={4}/>
+                                    </select>
+                                    <select name="county" className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                                        <option value="">Enter Closest Landmark</option>
+                                        <option value="Nairobi City">Nairobi City</option>
+                                        <option value="Westlands">Westlands</option>
+                                        <option value="Dagoretti">Dagoretti</option>
+                                        {/* Add other counties in Nairobi here */}
+                                    </select>
+
                                     <div>
                                         <a
-                                            className="flex justify-center group relative inline-block overflow-hidden border border-black px-8 py-3 w-full focus:outline-none focus:ring"
+                                            className="flex justify-center group relative inline-block overflow-hidden border border-orange-500 px-8 py-3 w-full focus:outline-none focus:ring"
                                             href="/"
                                         >
                                             <span
-                                        className="absolute inset-y-0 left-0 w-[2px] bg-white transition-all group-hover:w-full group-active:bg-black"
+                                                className="absolute inset-y-0 left-0 w-[2px] bg-orange-500 transition-all group-hover:w-full group-active:bg-orange-500"
                                             ></span>
 
                                             <span
-                                                className="relative text-sm font-medium text-black transition-colors group-hover:text-black"
+                                                className="relative text-sm font-medium text-orange-500 transition-colors group-hover:text-white"
                                             >
-                                                Contact Us
+                                                Check Coverage
                                             </span>
                                         </a>
 
@@ -941,7 +942,7 @@ const Contacts = () => {
     );
 };
 
-export default Contacts;
+export default Search;
 
 const ContactTextArea = ({
                              row,
