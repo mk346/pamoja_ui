@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="w-full min-h-screen flex items-center justify-center bg-black">
             <div className="md:w-2/3 w-full px-4 text-white flex flex-col">
                 <div className="w-full text-4xl md:text-7xl font-bold"> {/* Reduced font size for mobile */}
-                    <h1 className="w-full md:w-2/3 sm:w-2/5 text-orange-500">Experience Internet of Fiber Optics</h1>
+                    <h1 className="w-full md:w-2/3 sm:w-2/5 text-orange-500">Pamoja Home Fibre, Your Complete Digital Experience!</h1>
                 </div>
                 <div className="flex mt-8 flex-col md:flex-row md:justify-between">
                     <p className="w-full md:w-2/3 text-white">Transforming the Way You Connect, Communicate, and Collaborate with Fiber Optics
