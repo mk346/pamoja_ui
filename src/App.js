@@ -8,6 +8,7 @@ import Internet from './pages/Internet';
 
 
 
+
 function App() {
     return (
         <>
@@ -30,3 +31,4 @@ function App() {
 }
 
 export default App;
+
