@@ -13,6 +13,7 @@ import { createStyles, Container, Title, Text, Button, rem } from '@mantine/core
             backgroundImage: `linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(${camera})`,
             paddingTop: `calc(${theme.spacing.xl} * 3)`,
             paddingBottom: `calc(${theme.spacing.xl} * 3)`,
+
         },
 
         inner: {
@@ -81,9 +82,12 @@ import { createStyles, Container, Title, Text, Button, rem } from '@mantine/core
         const { classes } = useStyles();
         return (
             <div className={classes.root}>
-                <h1 className="mb-2 mt-2 text-7xl font-black text-orange-500 justify-center flex">CCTV Installation</h1>
+                <h1 className="mb-2 mt-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-orange-500 text-center lg:justify-center lg:flex">
+                    CCTV Installation
+                </h1>
 
-                <Container size="lg">
+
+                <Container size="lg md:w-2/3 sm:w-2/5">
 
                     <div className={classes.inner}>
                         <div className={classes.content}>

@@ -9,7 +9,7 @@ interface PlanCardProps {
     imageSrc: string;
 }
 
-export default function PlanCard({ description, price, color = "Start", imageSrc }: PlanCardProps) {
+export default function ReviewCard({ description, price, color = "Start", imageSrc }: PlanCardProps) {
     return (
         <div style={{ backgroundColor: color }} className="flex min-h-[280px] w-[350px] flex-col rounded-3xl p-8">
             <div className="mb-5">

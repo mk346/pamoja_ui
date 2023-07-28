@@ -8,8 +8,8 @@ const Cable = () => {
                 className="relative overflow-hidden bg-cover bg-top bg-no-repeat"
                 style={{
                     backgroundImage: `url(${global})`,
-                    height: '400px',
-                    width: '1535px'
+                    height: '450px', // Adjust the height for smaller devices
+                    width: '100%',   // Set the width to 100% to fit the screen
                 }}
             >
                 {/* Image overlay */}
@@ -17,9 +17,9 @@ const Cable = () => {
                     className="absolute top-0 left-0 w-full h-full bg-black opacity-20"
                 ></div>
 
-                <div className="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-24 relative">
+                <div className="bg-black/25 p-4 md:p-12 lg:px-16 lg:py-24 relative">
                     <div className="text-center ltr:sm:text-left rtl:sm:text-right">
-                        <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
+                        <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-4xl lg:text-5xl">
                             Fibre Packages
                         </h2>
 
@@ -31,7 +31,7 @@ const Cable = () => {
 
                         <div className="mt-4 sm:mt-8">
                             <a
-                                className="group relative inline-block overflow-hidden border border-orange-500 px-8 py-3 focus:outline-none focus:ring"
+                                className="group relative inline-block overflow-hidden border border-orange-500 px-4 py-2 sm:px-6 sm:py-3 focus:outline-none focus:ring"
                                 href="/"
                             >
                                 <span
@@ -52,3 +52,4 @@ const Cable = () => {
 };
 
 export default Cable;
+

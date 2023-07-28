@@ -7,7 +7,9 @@ const Cctv = () => {
         <>
             <section
                 className="overflow-hidden bg-cover bg-top bg-no-repeat"
-                style={{ backgroundImage: `url(${global})` }}
+                style={{ backgroundImage: `url(${global})`,
+                    height: '450px',
+                    width: '100%',}}
             >
                 <div className="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-24">
                     <div className="text-center ltr:sm:text-left rtl:sm:text-right">

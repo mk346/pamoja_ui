@@ -4,7 +4,7 @@ import Cards from "../components/Cards";
 import Footer from "../components/Footer";
 import Accordion from "../components/Accordion";
 
-import Pricing from "../components/Pricing";
+import Reviews from "../components/Reviews";
 import '../styles.css';
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
@@ -22,7 +22,7 @@ function Home() {
             <About />
             <Cards />
             <Accordion />
-            <Pricing />
+            <Reviews />
             <Footer />
 
 
