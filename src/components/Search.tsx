@@ -1,6 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
+import {useEffect} from "react";
+
+const counties = {
+    "nairobi-county": {
+        name: "Nairobi County",
+        districts: {
+            "nairobi-city": {
+                name: "Nairobi City",
+
+            },
+            "westlands": {
+                name: "Westlands"
+            },
+            "dagoretti-north": {
+                name: "Dagoretti North"
+            },
+            "dagoretti-south": {
+                name: "Dagoretti South"
+            }
+        }
+    },
+    kajiado: {
+        name: "Kajiado",
+        districts: {
+            "ongata-rongai": {
+                name: "Ongata Rongai"
+            },
+            "ngong": {
+                name: "Ngong"
+            },
+            marsabit: {
+                name: "Marsabit"
+            },
+            kitengela: {
+                name: "Kitengela"
+            }
+        }
+    }
+};
 
 const Search = () => {
+    const [county, setCounty] = useState(null);
+    const [district, setDistrict] = useState(null);
+
+    useEffect(() => {
+        console.log(county, district);
+    }, [county, district]);
+
+    const handleCountyChange = (e:any) => {
+        if (!e.target.value) {
+            setCounty(null);
+            setDistrict(null);
+        }
+
+        setCounty(e.target.value);
+    };
+
+    const handleDistrictChange = (e:any) => {
+        if (!e.target.value) {
+            setDistrict(null);
+        }
+
+        setDistrict(e.target.value);
+    };
+
     return (
         <>
             <section className="bg-black py-20 lg:py-[120px] overflow-hidden relative z-10">
@@ -81,32 +144,38 @@ const Search = () => {
                             </div>
                         </div>
                         <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-
                             <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
                                 <form>
-                                    <select name="county" className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                                        <option value="">Select County</option>
-                                        <option value="Nairobi City">Nairobi City</option>
-                                        <option value="Westlands">Westlands</option>
-                                        <option value="Dagoretti">Dagoretti</option>
-                                        {/* Add other counties in Nairobi here */}
+                                    <select onChange={handleCountyChange} name="county" className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                                        <option value={""}>Select a county</option>
+                                        {Object.keys(counties).map((county, i) => {
+                                            return (
+                                                <option key={i} value={county}>
+                                                    {/*
+                                                    // @ts-ignore */}
+                                                    {counties[county]["name"]}
+                                                </option>
+                                            );
+                                        })}
                                     </select>
-
-                                    <select name="county" className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                                        <option value="">Enter Estate/Building Name</option>
-                                        <option value="Nairobi City">Nairobi City</option>
-                                        <option value="Westlands">Westlands</option>
-                                        <option value="Dagoretti">Dagoretti</option>
-
+                                    <select onChange={handleDistrictChange} name="county" className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                                        <option value={""}>Select a district</option>
+                                        {county &&
+                                            Object.keys(counties[county]["districts"]).map((district, i) => {
+                                                return (
+                                                    <option key={i} value={district}>
+                                                        {counties[county]["districts"][district]["name"]}
+                                                    </option>
+                                                );
+                                            })}
                                     </select>
-                                    <select name="county" className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                                        <option value="">Enter Closest Landmark</option>
-                                        <option value="Nairobi City">Nairobi City</option>
-                                        <option value="Westlands">Westlands</option>
-                                        <option value="Dagoretti">Dagoretti</option>
-                                        {/* Add other counties in Nairobi here */}
-                                    </select>
-
+                                    {county && district && (
+                                        <p>
+                                            Pamoja Fiber can connect you to&nbsp;
+                                            {counties[county]["districts"][district]["name"]} in&nbsp;
+                                            {counties[county]["name"]}
+                                        </p>
+                                    )}
                                     <div>
                                         <a
                                             className="flex justify-center group relative inline-block overflow-hidden border border-orange-500 px-8 py-3 w-full focus:outline-none focus:ring"
