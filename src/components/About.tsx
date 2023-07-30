@@ -20,7 +20,7 @@ const About = () => {
         >
           <h1 className="mb-4 text-5xl sm:text-6xl lg:text-7xl font-black text-orange-500 text-center">About Us</h1>
           <div className="container">
-            <div className="flex flex-wrap items-center justify-between -mx-4">
+            <div className="flex flex-wrap items-center justify-between -mx-4 pl-4 pr-4">
               <div className="w-full px-4 lg:w-6/12">
                 <div className="flex items-center -mx-3 sm:-mx-4">
                   <div className="w-full px-3 sm:px-4 xl:w-1/2">
