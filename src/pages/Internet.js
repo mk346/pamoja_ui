@@ -11,7 +11,7 @@ import Card from "../components/Card.tsx";
 import Carousel from "../components/Carousel";
 import Search from "../components/Search";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbarx";
 import Cable from "../components/Cable";
 
 

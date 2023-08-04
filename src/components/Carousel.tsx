@@ -29,7 +29,12 @@ export default function Carroussel(props: IProps) {
 
     return (
         <div
-            style={{ width: props.width, height: props.height, margin: props.margin }}
+            style={{
+                width: props.width,
+                height: props.height,
+                margin: props.margin,
+                background: 'black', // Set the background color to black
+            }}
         >
             <Carousel
                 slides={cards}

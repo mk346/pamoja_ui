@@ -5,7 +5,7 @@ import Tv from '../assets/pamojatv.jpeg'
 
 const Cards = () => {
     return (
-        <div className='w-full py-10 px-4 bg-dark text-white'>
+        <div className='w-full py-10 px-4 bg-black text-white'>
             <h1 className="mb-6 text-4xl sm:text-5xl md:text-7xl font-black text-orange-500 text-center">What We Do</h1>
 
             <div className='max-w-[1240px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>

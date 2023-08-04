@@ -9,10 +9,10 @@ const useStyles = createStyles((theme: MantineTheme) => ({
         background: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[0],
     },
     title: {
-        fontSize:40,
+        fontSize: 50,
         marginBottom: theme.spacing.md,
         paddingLeft: theme.spacing.md,
-        color: theme.colorScheme === 'dark' ? theme.white : theme.colors.orange,
+        color: '#f97316', // Update the color to #f97316
         fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     },
     item: {
@@ -41,7 +41,7 @@ export function FaqWithImage({ placeholderTexts }: FaqWithImageProps) {
                         <Image src={photo} alt="Frequently Asked Questions" />
                     </Col>
                     <Col span={12} md={6}>
-                        <Title order={2} ta="left" className={`${classes.title} text-orange-500`}>
+                        <Title order={2} ta="left" className={`${classes.title}`}>
                         Frequently Asked Questions
                         </Title>
 

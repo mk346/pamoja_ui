@@ -3,7 +3,7 @@ import React from 'react'
 const Stats = () => {
     return (
 
-        <section className="bg-white dark:bg-black">
+        <section className="bg-black">
             <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-3xl font-bold text-orange-500 sm:text-4xl">

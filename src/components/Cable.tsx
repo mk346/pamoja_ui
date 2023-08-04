@@ -24,26 +24,12 @@ const Cable = () => {
                         </h2>
 
                         <p
-                            className="hidden max-w-lg text-orange-500/90 md:mt-6 md:block md:text-lg md:leading-relaxed font-bold"
+                            className="hidden max-w-lg text-orange-500/90 md:mt-6 md:block md:text-lg md:leading-relaxed font-bold flex justify-center" // Add 'flex justify-center' classes
                         >
                             At Pamoja Home Fiber Company, we strive to provide you with the best-in-class fiber optic internet services for your home. Experience the power of seamless connectivity and explore a world of endless possibilities
                         </p>
 
-                        <div className="mt-4 sm:mt-8">
-                            <a
-                                className="group relative inline-block overflow-hidden border border-orange-500 px-4 py-2 sm:px-6 sm:py-3 focus:outline-none focus:ring"
-                                href="/"
-                            >
-                                <span
-                                    className="absolute inset-y-0 left-0 w-[2px] bg-orange-500 transition-all group-hover:w-full group-active:bg-orange-500"
-                                ></span>
-                                <span
-                                    className="relative text-sm font-medium text-white transition-colors group-hover:text-black"
-                                >
-                                    Get Connected Today
-                                </span>
-                            </a>
-                        </div>
+
                     </div>
                 </div>
             </section>
@@ -52,4 +38,3 @@ const Cable = () => {
 };
 
 export default Cable;
-

@@ -64,8 +64,8 @@ function MovieCarousel() {
     ];
 
     return (
-        <div className="">
-            <h1 className="mb-4 mt-4 text-4xl md:text-7xl font-black text-orange-500 text-center">
+        <div className="bg-black pt-2">
+            <h1 className="mb-4 mt-4 text-4xl md:text-7xl font-black text-orange-500 text-center ">
                 Pamoja FLIX
             </h1>
             <h2 className="mb-4 mt-4 text-xl md:text-3xl font-black text-white text-center">

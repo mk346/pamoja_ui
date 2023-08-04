@@ -5,7 +5,7 @@ const Cctv = () => {
     return (
         <>
             <section
-                className="overflow-hidden bg-cover bg-top bg-no-repeat"
+                className="overflow-hidden bg-cover bg-black bg-top bg-no-repeat"
                 style={{
                     backgroundImage: `url(${global})`,
                     height: '450px',

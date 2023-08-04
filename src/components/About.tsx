@@ -636,12 +636,7 @@ const About = () => {
                   <p className="mb-6 text-black text-xl sm:text-2xl">
                     At Pamoja Home Fibre, our primary focus is on delivering high-speed, reliable, and affordable internet connectivity to our esteemed customers. We understand that in this digital age, a strong and stable internet connection is no longer a luxury but a necessity. That's why we have made it our mission to ensure that our customers experience the very best in internet services.
                   </p>
-                  <a
-                      href="/#"
-                      className="inline-flex items-center justify-center px-8 py-3 text-base font-normal text-center text-black rounded-lg bg-orange-500 hover:bg-opacity-90"
-                  >
-                    Get Started
-                  </a>
+
                 </div>
               </div>
             </div>
