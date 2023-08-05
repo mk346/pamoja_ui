@@ -17,20 +17,7 @@ const Cctv = () => {
                             Contact Us
                         </h2>
 
-                        <p
-                            className="hidden max-w-lg font-bold text-orange-500/90 md:mt-6 md:block md:text-lg md:leading-relaxed"
-                        >
-                            Have questions or need assistance with our fiber internet services? We're here to help! Feel free to reach out to our dedicated support team for any inquiries, technical support, or to explore our various home fiber plans. Get in touch with us today, and let's connect you to a world of seamless internet experiences
-                        </p>
 
-                        <div className="mt-4 sm:mt-8">
-                            <a
-                                href="/"
-                                className="inline-block rounded-full bg-orange-500 px-12 py-3 text-sm font-medium text-black transition hover:bg-orange-300 focus:outline-none focus:ring focus:ring-yellow-400"
-                            >
-                                Get Connected Today
-                            </a>
-                        </div>
                     </div>
                 </div>
             </section>

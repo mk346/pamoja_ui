@@ -1,7 +1,7 @@
 import React from "react";
-import Wifi from '../assets/pamojawifi.jpeg'
-import Cctv from '../assets/pamojacctv.jpeg'
-import Tv from '../assets/pamojatv.jpeg'
+import Wifi from '../assets/homewifi.jpeg'
+import Cctv from '../assets/homecctv.jpeg'
+import Tv from '../assets/hometv.jpeg'
 
 const Cards = () => {
     return (
@@ -15,7 +15,9 @@ const Cards = () => {
                     <div className='text-center font-medium'>
                         <p className='py-2 border-b mx-4 sm:mx-8'>We provide Broadband service that allows subscribers to access the Internet and the Web from anywhere within the zone of our coverage.</p>
                     </div>
-                    <button className='bg-orange-500 w-[160px] sm:w-[200px] rounded-md font-medium my-4 mx-auto py-2 sm:py-3 text-black'>WiFi Packages</button>
+
+
+
                 </div>
 
                 <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
@@ -24,7 +26,7 @@ const Cards = () => {
                     <div className='text-center font-medium'>
                         <p className='py-2 border-b mx-4 sm:mx-8'>We do CCTV Planning and Installation. Install security cameras for your home or business at affordable prices. Secure your home today with us</p>
                     </div>
-                    <button className='bg-orange-500 w-[160px] sm:w-[200px] rounded-md font-medium my-4 mx-auto py-2 sm:py-3 text-black'>Inquire</button>
+
                 </div>
 
                 <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
@@ -33,7 +35,7 @@ const Cards = () => {
                     <div className='text-center font-medium'>
                         <p className='py-2 border-b mx-4 sm:mx-8'>Watch the latest blockbuster movies and series from Hollywood and all over the world through our IPTV online Entertainment platform.</p>
                     </div>
-                    <button className='bg-orange-500 w-[160px] sm:w-[200px] rounded-md font-medium my-4 mx-auto py-2 sm:py-3 text-black'>Inquire</button>
+
                 </div>
             </div>
         </div>

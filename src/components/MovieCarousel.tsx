@@ -27,7 +27,7 @@ function MovieCarousel() {
                 <Card
                     imagen={ghost}
                     title="GHOSTED"
-                    Text="You can stream HD videos, music and work efficiently from home."
+                    Text="Cole falls head over heels for enigmatic Sadie but then makes the shocking discovery that she's a secret agent."
                 />
             ),
         },
@@ -37,7 +37,7 @@ function MovieCarousel() {
                 <Card
                     imagen={mother}
                     title="THE MOTHER"
-                    Text="Enjoy lag-free streaming, smooth online gaming, and speedy downloads"
+                    Text="While fleeing from dangerous assailants, an assassin comes out of hiding to protect the daughter she left earlier in life"
                 />
             ),
         },
@@ -47,7 +47,7 @@ function MovieCarousel() {
                 <Card
                     imagen={mermaid}
                     title="THE LITTLE MERMAID"
-                    Text="Engage in competitive online gaming and handle bandwidth-intensive tasks effortlessly."
+                    Text="Ariel is a mermaid princess and the youngest daughter of King Triton, ruler of the merpeople"
                 />
             ),
         },
@@ -57,7 +57,7 @@ function MovieCarousel() {
                 <Card
                     imagen={extraction}
                     title="EXTRACTION 2"
-                    Text="Unleash the full potential of your online activities with our Diamond package."
+                    Text=" Tyler Rake is initially hired to rescue the family of an abusive crime lord from a Georgian prison."
                 />
             ),
         },

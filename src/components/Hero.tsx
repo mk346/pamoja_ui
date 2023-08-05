@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <div className='text-white pb-11 pt-10 header'>
             <div className='max-w-[800px] mt-12 md:mt-24 w-full h-[300px] md:h-[400px] mx-auto text-center flex flex-col justify-center'>
-                <p className='md:text-xl sm:text-xl text-orange-500 font-bold mt-5'>Welcome to Pamoja HomeFibre</p>
+                <p className='md:text-3xl sm:text-2xl text-orange-500 font-bold mt-5'>Welcome to Pamoja HomeFibre</p>
                 <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold md:py-4'>The #1 Internet Solutions Provider</h1>
                 <div className='flex items-center justify-center'> {/* Added 'flex' and 'items-center' class here */}
 

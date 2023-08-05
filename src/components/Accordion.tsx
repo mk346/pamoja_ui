@@ -71,11 +71,11 @@ export default function App() {
             answer: 'Answer to multiple accounts question',
         },
         {
-            question: 'How can I subscribe to the monthly newsletter?',
+            question: 'Is the Installation free?',
             answer: 'Answer to newsletter subscription question',
         },
         {
-            question: 'Do you store credit card information securely?',
+            question: 'Where are your offices located?',
             answer: 'Answer to credit card information question',
         },
 

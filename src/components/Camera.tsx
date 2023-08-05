@@ -4,6 +4,7 @@ import camera from '../assets/eye.jpg';
 
 
 import { createStyles, Container, Title, Text, Button, rem } from '@mantine/core';
+import { Link } from 'react-router-dom';
 
     const useStyles = createStyles((theme) => ({
         root: {
@@ -113,6 +114,8 @@ import { createStyles, Container, Title, Text, Button, rem } from '@mantine/core
                                 size="xl"
                                 className={classes.control}
                                 mt={40}
+                                component={Link} // Use the Link component from React Router
+                                to="/Contact"    // Specify the link destination
                             >
                                 Get started
                             </Button>
