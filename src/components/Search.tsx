@@ -146,7 +146,7 @@ const Search = () => {
                         <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
                             <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
                                 <form>
-                                    <select onChange={handleCountyChange} name="county" className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                                    <select onChange={handleCountyChange} name="county" >
                                         <option value={""}>Select a county</option>
                                         {Object.keys(counties).map((county, i) => {
                                             return (
@@ -1012,52 +1012,3 @@ const Search = () => {
 };
 
 export default Search;
-
-const ContactTextArea = ({
-                             row,
-                             placeholder,
-                             name,
-                             defaultValue,
-                         }: {
-    row: number;
-    placeholder: string;
-    name: string;
-    defaultValue: string;
-}) => {
-    return (
-        <>
-            <div className="mb-6">
-        <textarea
-            rows={row}
-            placeholder={placeholder}
-            name={name}
-            className="border-[f0f0f0] w-full resize-none rounded border py-3 px-[14px] text-base text-body-color outline-none focus:border-primary focus-visible:shadow-none"
-            defaultValue={defaultValue}
-        />
-            </div>
-        </>
-    );
-};
-
-const ContactInputBox = ({
-                             type,
-                             placeholder,
-                             name,
-                         }: {
-    type: string;
-    placeholder: string;
-    name: string;
-}) => {
-    return (
-        <>
-            <div className="mb-6">
-                <input
-                    type={type}
-                    placeholder={placeholder}
-                    name={name}
-                    className="border-[f0f0f0] w-full rounded border py-3 px-[14px] text-base text-body-color outline-none focus:border-primary focus-visible:shadow-none"
-                />
-            </div>
-        </>
-    );
-};
