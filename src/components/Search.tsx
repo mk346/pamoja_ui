@@ -7,16 +7,20 @@ const counties = {
         districts: {
             "nairobi-city": {
                 name: "Nairobi City",
+                wifiCoverage:true,
 
             },
             "westlands": {
-                name: "Westlands"
+                name: "Westlands",
+                wifiCoverage: false,
             },
             "dagoretti-north": {
-                name: "Dagoretti North"
+                name: "Dagoretti North",
+                wifiCoverage: false,
             },
             "dagoretti-south": {
-                name: "Dagoretti South"
+                name: "Dagoretti South",
+                wifiCoverage: false,
             }
         }
     },
@@ -24,16 +28,20 @@ const counties = {
         name: "Kajiado",
         districts: {
             "ongata-rongai": {
-                name: "Ongata Rongai"
+                name: "Ongata Rongai",
+                wifiCoverage:true,
             },
             "ngong": {
-                name: "Ngong"
+                name: "Ngong",
+                wifiCoverage:false,
             },
             marsabit: {
-                name: "Marsabit"
+                name: "Marsabit",
+                wifiCoverage:false,
             },
             kitengela: {
-                name: "Kitengela"
+                name: "Kitengela",
+                wifiCoverage:true,
             }
         }
     }
@@ -146,8 +154,8 @@ const Search = () => {
                         <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
                             <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
                                 <form>
-                                    <select onChange={handleCountyChange} name="county" >
-                                        <option value={""}>Select a county</option>
+                                    <select onChange={handleCountyChange} name="county" style={{backgroundColor: "#f97316"}} className="block w-60 h-10 mt-1 mb-5 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" >
+                                        <option value={""}>Choose your county</option>
                                         {Object.keys(counties).map((county, i) => {
                                             return (
                                                 <option key={i} value={county}>
@@ -158,8 +166,8 @@ const Search = () => {
                                             );
                                         })}
                                     </select>
-                                    <select onChange={handleDistrictChange} name="county" className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                                        <option value={""}>Select a district</option>
+                                    <select onChange={handleDistrictChange} name="county" className="block w-g0 h-10 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" style={{backgroundColor: "#f97316"}}>
+                                        <option value={""}>Choose an area in your county</option>
                                         {county &&
                                             Object.keys(counties[county]["districts"]).map((district, i) => {
                                                 return (
@@ -170,29 +178,17 @@ const Search = () => {
                                             })}
                                     </select>
                                     {county && district && (
-                                        <p>
-                                            Pamoja Fiber can connect you to&nbsp;
-                                            {counties[county]["districts"][district]["name"]} in&nbsp;
-                                            {counties[county]["name"]}
-                                        </p>
+                                            counties[county]["districts"][district]["wifiCoverage"] ? <p>
+                                                Pamoja Fiber can connect you to&nbsp;
+                                                {counties[county]["districts"][district]["name"]} in&nbsp;
+                                                {counties[county]["name"]}
+                                            </p> : <p>
+                                                Pamoja Fiber can't connect you to&nbsp;
+                                                {counties[county]["districts"][district]["name"]} in&nbsp;
+                                                {counties[county]["name"]}
+                                            </p>
                                     )}
-                                    <div>
-                                        <a
-                                            className="flex justify-center group relative inline-block overflow-hidden border border-orange-500 px-8 py-3 w-full focus:outline-none focus:ring no-underline"
-                                            href="/"
-                                        >
-                                            <span
-                                                className="absolute inset-y-0 left-0 w-[2px] bg-orange-500 transition-all group-hover:w-full group-active:bg-orange-500"
-                                            ></span>
 
-                                            <span
-                                                className="relative text-sm font-medium text-orange-500 transition-colors group-hover:text-white no-underline"
-                                            >
-                                                Check Coverage
-                                            </span>
-                                        </a>
-
-                                    </div>
                                 </form>
                                 <div>
                   <span className="absolute -top-10 -right-9 z-[-1]">
