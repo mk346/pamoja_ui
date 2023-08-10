@@ -3,7 +3,7 @@ import "keen-slider/keen-slider.min.css"
 import "../styles.css"
 import bronzeImage from "../assets/bronze.png";
 import silverImage from "../assets/silver.png";
-import goldImage from "../assets/gold.png";
+import goldImage from "../assets/colorgold.png";
 import platinumImage from "../assets/platinum.png";
 import diamondImage from "../assets/diamond.png";
 import { v4 as uuidv4 } from "uuid";
