@@ -1,7 +1,7 @@
 import Styles from "./Card.module.css";
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
-import Button from "./Button";
+
 
 interface CardProps {
     imagen: string;
@@ -31,7 +31,7 @@ function Card({ imagen, title, Text }: CardProps) {
             <h2 className="mb-4 text-2xl font-black text-white text-center">{title}</h2> {/* Use the 'title' prop */}
             <p className="text-black fw-bold" >{Text}</p>
             <div className={Styles.btnn}>
-                <Button text="Request" />
+
             </div>
         </animated.div>
     );

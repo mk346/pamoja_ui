@@ -25,7 +25,7 @@ const counties = {
         }
     },
     kajiado: {
-        name: "Kajiado",
+        name: "Kajiado County",
         districts: {
             "ongata-rongai": {
                 name: "Ongata Rongai",
@@ -50,6 +50,7 @@ const counties = {
 const Search = () => {
     const [county, setCounty] = useState(null);
     const [district, setDistrict] = useState(null);
+
 
     useEffect(() => {
         console.log(county, district);
