@@ -1,11 +1,12 @@
 import React from "react"
 import "keen-slider/keen-slider.min.css"
 import "../styles.css"
-import bronzeImage from "../assets/bronze.png";
-import silverImage from "../assets/silver.png";
-import goldImage from "../assets/colorgold.png";
-import platinumImage from "../assets/platinum.png";
-import diamondImage from "../assets/diamond.png";
+import bronzeImage from "../assets/eight.png";
+import silverImage from "../assets/twelve.png";
+import goldImage from "../assets/fifteen.png";
+import platinumImage from "../assets/twentyfive.png";
+import diamondImage from "../assets/forty.png";
+import sixty from "../assets/sixty.png";
 import { v4 as uuidv4 } from "uuid";
 import Card from "../components/Card.tsx";
 import Carousel from "../components/Carousel";
@@ -22,7 +23,7 @@ function Internet() {
             key: uuidv4(),
             content: (
                 <Card imagen={bronzeImage}
-                title="BRONZE"
+                title="COPPER"
                 Text="Perfect for light internet users and casual browsing."/>
             )
         },
@@ -30,7 +31,7 @@ function Internet() {
             key: uuidv4(),
             content: (
                 <Card imagen={silverImage}
-                      title="SILVER"
+                      title="BRONZE"
                       Text="You can stream HD videos,music and work efficiently from home."  />
 
             )
@@ -39,7 +40,7 @@ function Internet() {
             key: uuidv4(),
             content: (
                 <Card imagen={goldImage}
-                      title="GOLD"
+                      title="SILVER"
                       Text="Enjoy lag-free streaming, smooth online gaming, and speedy downloads"  />
 
             )
@@ -48,7 +49,7 @@ function Internet() {
             key: uuidv4(),
             content: (
                 <Card imagen={platinumImage}
-                      title="PLATINUM"
+                      title="GOLD"
                       Text="Engage in competitive online gaming and handle bandwidth-intensive tasks effortlessly."  />
             )
         },
@@ -56,6 +57,14 @@ function Internet() {
             key: uuidv4(),
             content: (
                 <Card imagen={diamondImage}
+                      title="PLATINUM"
+                      Text="Engage in competitive online gaming and handle bandwidth-intensive tasks effortlessly."  />
+            )
+        },
+        {
+            key: uuidv4(),
+            content: (
+                <Card imagen={sixty}
                       title="DIAMOND"
                       Text="Unleash the full potential of your online activities with our Diamond package."  />
             )

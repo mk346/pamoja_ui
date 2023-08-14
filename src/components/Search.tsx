@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {useEffect} from "react";
 
+
 const counties = {
     "nairobi-county": {
         name: "Nairobi County",
@@ -50,6 +51,7 @@ const counties = {
 const Search = () => {
     const [county, setCounty] = useState(null);
     const [district, setDistrict] = useState(null);
+
 
 
     useEffect(() => {
