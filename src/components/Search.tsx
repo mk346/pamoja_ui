@@ -157,7 +157,7 @@ const Search = () => {
                         <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
                             <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
                                 <form>
-                                    <select onChange={handleCountyChange} name="county" style={{backgroundColor: "#f97316"}} className="block w-60 h-10 mt-1 mb-5 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" >
+                                    <select onChange={handleCountyChange}  name="county" style={{backgroundColor: "#f97316"}} className="block w-60 h-10 mt-1 mb-5 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" >
                                         <option value={""}>Choose your county</option>
                                         {Object.keys(counties).map((county, i) => {
                                             return (
@@ -169,7 +169,7 @@ const Search = () => {
                                             );
                                         })}
                                     </select>
-                                    <select onChange={handleDistrictChange} name="county" className="block w-g0 h-10 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" style={{backgroundColor: "#f97316"}}>
+                                    <select onChange={handleDistrictChange} onBlur={() => window.location.reload()} name="county" className="block w-g0 h-10 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" style={{backgroundColor: "#f97316"}}>
                                         <option value={""}>Choose an area in your county</option>
                                         {county &&
                                             Object.keys(counties[county]["districts"]).map((district, i) => {
