@@ -1,30 +1,73 @@
 import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 import Typed from 'react-typed';
-import "../styles.css";
 
-const Hero = () => {
+import nasaImage from '../assets/nasa.jpg';
+import mrembo from '../assets/mrembo.jpg';
+import msupa from '../assets/msupa.jpg';
+
+const images = [
+    {
+        src: nasaImage,
+        caption: {
+            title: 'Welcome to Pamoja HomeFibre',
+            subtitle: 'The #1 Internet Solutions Provider',
+            typedStrings: [
+                'Reliable Internet Packages.',
+                'CCTV installation.',
+                'PamojaFlix for Entertainment.'
+            ]
+        }
+    },
+    {
+        src: mrembo,
+        caption: {
+            title: 'Explore Mrembo',
+            subtitle: 'Discover the Beauty of Mrembo',
+            typedStrings: [
+                'Luxurious Accommodations.',
+                'Scenic Views and Landscapes.',
+                'Exquisite Dining Experiences.'
+            ]
+        }
+    },
+    {
+        src: msupa,
+        caption: {
+            title: 'Experience Msupa',
+            subtitle: 'Your Ultimate Adventure Destination',
+            typedStrings: [
+                'Thrilling Outdoor Activities.',
+                'Explore Nature and Wildlife.',
+                'Create Unforgettable Memories.'
+            ]
+        }
+    }
+];
+
+function Hero() {
     return (
-        <div className='text-white pb-11 pt-10 header'>
-            <div className='max-w-[800px] mt-12 md:mt-24 w-full h-[300px] md:h-[400px] mx-auto text-center flex flex-col justify-center'>
-                <p className='md:text-3xl sm:text-2xl text-orange-500 font-bold mt-5'>Welcome to Pamoja HomeFibre</p>
-                <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold md:py-4'>The #1 Internet Solutions Provider</h1>
-                <div className='flex items-center justify-center'> {/* Added 'flex' and 'items-center' class here */}
-
-                    <Typed
-                        className='md:text-2xl sm:text-xl text-orange-500 font-bold md:pl-2 pl-1'
-                        strings={['Reliable Internet Packages.', 'CCTV installation.', 'PamojaFlix for Entertainment.']}
-                        typeSpeed={50}
-                        backSpeed={50}
-                        loop
-                    />
-                </div>
-
-                <p className='md:text-xl text-base font-bold text-white'> Fast, Reliable, and Affordable Internet connectivity for individual homes or multitenant buildings.</p>
-
-                <a href="/Contact" className='bg-orange-500 w-[180px] md:w-[200px] rounded-md font-medium my-6 mx-auto py-2 text-black no-underline'>Request Installation</a>
-            </div>
-        </div>
+        <Carousel>
+            {images.map((image, index) => (
+                <Carousel.Item key={index} style={{ height: '900px' }}>
+                    <img src={image.src} alt={`Slide ${index}`} />
+                    <Carousel.Caption>
+                        <p className='md:text-3xl sm:text-2xl text-orange-500 font-bold mt-5 pb-5'>{image.caption.title}</p>
+                        <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold md:py-4 pb-5'>{image.caption.subtitle}</h1>
+                        <div className='flex items-center justify-center'>
+                            <Typed
+                                className='md:text-2xl sm:text-xl text-orange-500 font-bold md:pl-2 pl-1 pb-5'
+                                strings={image.caption.typedStrings}
+                                typeSpeed={50}
+                                backSpeed={50}
+                                loop
+                            />
+                        </div>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            ))}
+        </Carousel>
     );
-};
+}
 
 export default Hero;
