@@ -4,7 +4,8 @@ import Typed from 'react-typed';
 
 import nasaImage from '../assets/nasa.jpg';
 import mrembo from '../assets/mrembo.jpg';
-import msupa from '../assets/msupa.jpg';
+// import msupa from '../assets/msupa.jpg';
+import living from '../assets/living.jpg';
 
 const images = [
     {
@@ -32,7 +33,7 @@ const images = [
         }
     },
     {
-        src: msupa,
+        src: living,
         caption: {
             title: 'Experience Msupa',
             subtitle: 'Your Ultimate Adventure Destination',
