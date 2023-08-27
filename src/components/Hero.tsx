@@ -4,12 +4,11 @@ import Typed from 'react-typed';
 
 import nasaImage from '../assets/nasa.jpg';
 import mrembo from '../assets/mrembo.jpg';
-// import msupa from '../assets/msupa.jpg';
-import living from '../assets/living.jpg';
+import living from '../assets/apartment.jpg';
 
 const images = [
     {
-        src: nasaImage,
+        src: living,
         caption: {
             title: 'Welcome to Pamoja HomeFibre',
             subtitle: 'The #1 Internet Solutions Provider',
@@ -33,7 +32,7 @@ const images = [
         }
     },
     {
-        src: living,
+        src: nasaImage,
         caption: {
             title: 'Experience Msupa',
             subtitle: 'Your Ultimate Adventure Destination',
@@ -53,11 +52,11 @@ function Hero() {
                 <Carousel.Item key={index} style={{ height: '900px' }}>
                     <img src={image.src} alt={`Slide ${index}`} />
                     <Carousel.Caption>
-                        <p className='md:text-3xl sm:text-2xl text-orange-500 font-bold mt-5 pb-5'>{image.caption.title}</p>
+                        <p className='md:text-3xl sm:text-2xl text-gray-500 font-bold mt-5 pb-5'>{image.caption.title}</p>
                         <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold md:py-4 pb-5'>{image.caption.subtitle}</h1>
                         <div className='flex items-center justify-center'>
                             <Typed
-                                className='md:text-2xl sm:text-xl text-orange-500 font-bold md:pl-2 pl-1 pb-5'
+                                className='md:text-2xl sm:text-xl text-red-600 font-bold md:pl-2 pl-1 pb-5'
                                 strings={image.caption.typedStrings}
                                 typeSpeed={50}
                                 backSpeed={50}

@@ -11,8 +11,6 @@ import Navbar from "../components/Navbarx";
 
 
 
-
-
 function Home() {
     return(
         <div>
