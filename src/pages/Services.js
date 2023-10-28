@@ -12,7 +12,7 @@ const Services = () => {
         <div>
             <Navbar />
             <Cctv />
-            <Embla />
+            {/* <Embla /> */}
             <Stats />
             <Camera />
             <Footer />

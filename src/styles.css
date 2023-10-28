@@ -43,3 +43,46 @@ body {
     text-decoration: none;
     color: #fff; /* Set your desired text color */
 }
+
+.txt-cl{
+    color: #e6e5e5;
+}
+.coverage{
+    font-size: 20px;
+    color: rgb(23, 179, 9);
+    font-weight: bold;
+}
+.carolhg{
+    height: 780px;
+}
+.testst{
+    height: 720px;
+    margin-top: 12px;
+    width: 50%;
+    top: 10px;
+    left: 50%;
+}
+
+
+/* media query */
+@media(max-width: 1500px){
+    .testst{
+        height: 500px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        margin-bottom: 150px !important;
+    }
+}
+@media(max-width: 900px){
+    .testst{
+        height: 400px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        margin-bottom: 150px !important;
+    }
+}
+@media(max-width: 500px){
+    .testst{
+        height: 300px;
+    }
+}

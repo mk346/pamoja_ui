@@ -33,7 +33,7 @@ const Cards = () => {
                     <img className='w-20 mx-auto mt-[-3rem] bg-white' src={Tv} alt="/" />
                     <h2 className='text-xl sm:text-2xl font-bold text-center py-8'>Android TV Box</h2>
                     <div className='text-center font-medium'>
-                        <p className='py-2 border-b mx-4 sm:mx-8'>Watch the latest blockbuster movies and series from Hollywood and all over the world through our IPTV online Entertainment platform.</p>
+                        <p className='py-2 border-b mx-4 sm:mx-8'>Android TV Box seeks to provide and organize digital content for your TV. With android tv box installed on your tv you can access IPTV, and YouTube</p>
                     </div>
 
                 </div>

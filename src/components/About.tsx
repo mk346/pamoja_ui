@@ -634,7 +634,7 @@ const About = () => {
                     We're committed to providing our customers top-notch services
                   </h2>
                   <p className="mb-6 text-black text-xl sm:text-2xl">
-                    At Pamoja Home Fibre, our primary focus is on delivering high-speed, reliable, and affordable internet connectivity to our esteemed customers. We understand that in this digital age, a strong and stable internet connection is no longer a luxury but a necessity. That's why we have made it our mission to ensure that our customers experience the very best in internet services.
+                    We are an ISP company offering web and internet access to businesses and homes.We install both fiber and wireless internet connection. We offer wide range of services like building communications networks for a company, safeguarding data and information, creating and administering databases, helping troubleshoot problems in computers or mobile devices, ensuring efficiency and security of business information systems.
                   </p>
 
                 </div>

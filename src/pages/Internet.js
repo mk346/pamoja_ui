@@ -24,7 +24,11 @@ function Internet() {
             content: (
                 <Card imagen={bronzeImage}
                 title="COPPER"
-                Text="Perfect for light internet users and casual browsing."/>
+                Text="Perfect for Internet Surfing and Emailing.
+                "
+                />
+
+                
             )
         },
         {
@@ -32,7 +36,7 @@ function Internet() {
             content: (
                 <Card imagen={silverImage}
                       title="BRONZE"
-                      Text="You can stream HD videos,music and work efficiently from home."  />
+                      Text="Perfect for HD Streaming, Fast Web Browsing and Fast Video Downloading"  />
 
             )
         },
@@ -41,7 +45,7 @@ function Internet() {
             content: (
                 <Card imagen={goldImage}
                       title="SILVER"
-                      Text="Enjoy lag-free streaming, smooth online gaming, and speedy downloads"  />
+                      Text="CCTV Capability, Online Gaming and HD Streaming"  />
 
             )
         },
@@ -50,7 +54,7 @@ function Internet() {
             content: (
                 <Card imagen={platinumImage}
                       title="GOLD"
-                      Text="Engage in competitive online gaming and handle bandwidth-intensive tasks effortlessly."  />
+                      Text="Perfect for Online Gaming, CCTV Management, Video Conferencing, and Multiple Device Streaming"  />
             )
         },
         {
@@ -58,7 +62,7 @@ function Internet() {
             content: (
                 <Card imagen={diamondImage}
                       title="PLATINUM"
-                      Text="Engage in competitive online gaming and handle bandwidth-intensive tasks effortlessly."  />
+                      Text="Perfect for Online Gaming, CCTV Management, Video Conferencing, and Multiple HD Device Streaming"  />
             )
         },
         {
@@ -66,7 +70,7 @@ function Internet() {
             content: (
                 <Card imagen={sixty}
                       title="DIAMOND"
-                      Text="Unleash the full potential of your online activities with our Diamond package."  />
+                      Text="Unleash the full potential of your Online Gaming, 4K Video Streaming and Video Conferencing"  />
             )
         }
     ];

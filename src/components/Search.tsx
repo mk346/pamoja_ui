@@ -3,47 +3,183 @@ import {useEffect} from "react";
 
 
 const counties = {
-    "nairobi-county": {
-        name: "Nairobi County",
+    "rongai-town": {
+        name: "Rongai Town",
         districts: {
-            "nairobi-city": {
-                name: "Nairobi City",
+            "mayor road": {
+                name: "Mayor Road",
                 wifiCoverage:true,
-
             },
-            "westlands": {
-                name: "Westlands",
-                wifiCoverage: false,
+            "gataka road": {
+                name: "Gataka Road",
+                wifiCoverage: true,
             },
-            "dagoretti-north": {
-                name: "Dagoretti North",
-                wifiCoverage: false,
+            "tumaini": {
+                name: "Tumaini",
+                wifiCoverage: true,
             },
-            "dagoretti-south": {
-                name: "Dagoretti South",
-                wifiCoverage: false,
-            }
+            "helena": {
+                name: "Helena Road",
+                wifiCoverage: true,
+            },
+            "njambi": {
+                name: "Njambi Road",
+                wifiCoverage: true,
+            },
+            "serenity": {
+                name: "Kings Serenity Road",
+                wifiCoverage: true,
+            },
+            "maiyan": {
+                name: "Maiyan Mall",
+                wifiCoverage: true,
+            },
+            "sironik": {
+                name: "Sironik Road",
+                wifiCoverage: true,
+            },
+            "wama": {
+                name: "Wama Road",
+                wifiCoverage: true,
+            },
+            "exhauster": {
+                name: "Exhauster Road",
+                wifiCoverage: true,
+            },
+            "nyotu": {
+                name: "Nyotu Road",
+                wifiCoverage: true,
+            },
+            "4th": {
+                name: "4th Avenue",
+                wifiCoverage: true,
+            },
+            "5th": {
+                name: "5th Avenue",
+                wifiCoverage: true,
+            },
+            "church": {
+                name: "Church Road",
+                wifiCoverage: true,
+            },
+            "honey": {
+                name: "Honey Pot Road",
+                wifiCoverage: true,
+            },
+            "kingdom": {
+                name: "Kingdom Hall Road",
+                wifiCoverage: true,
+            },
+            "tuskys": {
+                name: "Tuskys",
+                wifiCoverage: true,
+            },
         }
     },
     kajiado: {
-        name: "Kajiado County",
+        name: "Kiserian Town",
         districts: {
-            "ongata-rongai": {
-                name: "Ongata Rongai",
+            "rimpa": {
+                name: "Rimpa Town",
+                wifiCoverage:true,
+            },
+            "kwamaji": {
+                name: "Kwa Maji",
+                wifiCoverage:true,
+            },
+            "Eureka": {
+                name: "Eureka Road",
+                wifiCoverage:true,
+            },
+            "tole": {
+                name: "Tole Lane",
+                wifiCoverage:true,
+            },
+            "ndirango": {
+                name: "Ndirango Road",
+                wifiCoverage:true,
+            },
+            "saitoti": {
+                name: "Saitoti Road",
+                wifiCoverage:true,
+            },
+            "delta": {
+                name: "Delta",
                 wifiCoverage:true,
             },
             "ngong": {
-                name: "Ngong",
-                wifiCoverage:false,
+                name: "Ngong Stage",
+                wifiCoverage:true,
             },
-            marsabit: {
-                name: "Marsabit",
-                wifiCoverage:false,
+            "ngongrd": {
+                name: "Ngong Road",
+                wifiCoverage:true,
             },
-            kitengela: {
-                name: "Kitengela",
+            "shompole": {
+                name: "Shompole",
+                wifiCoverage:true,
+            },
+            "gategi": {
+                name: "Gategi",
+                wifiCoverage:true,
+            },
+            olemishish: {
+                name: "Ole Mishish",
+                wifiCoverage:true,
+            },
+            kunde: {
+                name: "Kunde Road",
                 wifiCoverage:true,
             }
+        }
+    },
+    tuala: {
+        name: "Tuala",
+        districts: {
+            "tuala": {
+                name: "Tuala Town",
+                wifiCoverage:true,
+            },
+            "lengete": {
+                name: "Lengete Estate",
+                wifiCoverage:true,
+            },
+            "milimani": {
+                name: "Milimani Estate",
+                wifiCoverage:true,
+            },
+            "rangau": {
+                name: "Rankau",
+                wifiCoverage:true,
+            },
+            "Kendienye": {
+                name: "Kendienye Center",
+                wifiCoverage:true,
+            },
+            "mungetho": {
+                name: "Mungetho",
+                wifiCoverage:true,
+            },
+            "kontente": {
+                name: "Kontente Estate",
+                wifiCoverage:true,
+            },
+            "flight": {
+                name: "Flight Lane",
+                wifiCoverage:true,
+            },
+            "green": {
+                name: "Green View Estate",
+                wifiCoverage:true,
+            },
+            "rockvalley": {
+                name: "Rock Valley",
+                wifiCoverage:true,
+            },
+            "nasieku": {
+                name: "Nasieku",
+                wifiCoverage:true,
+            },
         }
     }
 };
@@ -128,7 +264,7 @@ const Search = () => {
                                             Phone Number
                                         </h4>
                                         <p className="text-white">
-                                            0799745714 / 0711082101
+                                            0799745714
                                         </p>
                                     </div>
                                 </div>
@@ -158,7 +294,7 @@ const Search = () => {
                             <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
                                 <form>
                                     <select onChange={handleCountyChange}  name="county" style={{backgroundColor: "#f97316"}} className="block w-60 h-10 mt-1 mb-5 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" >
-                                        <option value={""}>Choose your county</option>
+                                        <option value={""}>Choose your Town</option>
                                         {Object.keys(counties).map((county, i) => {
                                             return (
                                                 <option key={i} value={county}>
@@ -170,7 +306,7 @@ const Search = () => {
                                         })}
                                     </select>
                                     <select onChange={handleDistrictChange} onBlur={() => window.location.reload()} name="county" className="block w-g0 h-10 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" style={{backgroundColor: "#f97316"}}>
-                                        <option value={""}>Choose an area in your county</option>
+                                        <option value={""}>Choose an Area / Estate  in your Town</option>
                                         {county &&
                                             Object.keys(counties[county]["districts"]).map((district, i) => {
                                                 return (
@@ -181,10 +317,11 @@ const Search = () => {
                                             })}
                                     </select>
                                     {county && district && (
-                                            counties[county]["districts"][district]["wifiCoverage"] ? <p>
-                                                Pamoja Fiber can connect you to&nbsp;
-                                                {counties[county]["districts"][district]["name"]} in&nbsp;
-                                                {counties[county]["name"]}
+                                            counties[county]["districts"][district]["wifiCoverage"] ? <p className="coverage">
+                                                Your area is Covered&nbsp; <br></br>
+                                                Call us on 0799745714 for Connection 
+                                                {/* {counties[county]["districts"][district]["name"]} in&nbsp;
+                                                {counties[county]["name"]} */}
                                             </p> : <p>
                                                 Pamoja Fiber can't connect you to&nbsp;
                                                 {counties[county]["districts"][district]["name"]} in&nbsp;

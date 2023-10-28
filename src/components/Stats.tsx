@@ -7,11 +7,11 @@ const Stats = () => {
             <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-3xl font-bold text-orange-500 sm:text-4xl">
-                        Your Ultimate Destination for Movies and Shows!
+                        Wireless Connectivity
                     </h2>
 
                     <p className="mt-4 text-white sm:text-xl">
-                        Whether you're a fan of heartwarming romance, adrenaline-pumping action, spine-chilling thrillers, or laugh-out-loud comedies, PamojaFlix has something to entertain every mood and taste.
+                    We provide Broadband service that allows subscriber computers and phones to access the Internet and the Web from anywhere within the zone of our coverage.
                     </p>
                 </div>
 
@@ -23,7 +23,7 @@ const Stats = () => {
                             <dt
                                 className="order-last text-lg font-medium text-white dark:text-white/75"
                             >
-                                Total Downloads
+                                Total Connections
                             </dt>
 
                             <dd

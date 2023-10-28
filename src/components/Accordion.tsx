@@ -64,19 +64,19 @@ export default function App() {
     const placeholderTexts: PlaceholderText[] = [
         {
             question: 'How can I reset my password?',
-            answer: 'Answer to reset password question',
+            answer: 'Contact Our Customer Support for guidance. Call us on 0799745714',
         },
         {
-            question: 'Can I create more than one account?',
-            answer: 'Answer to multiple accounts question',
+            question: 'How long does installation process take?',
+            answer: 'Wifi Installation is done within 48 hours',
         },
         {
             question: 'Is the Installation free?',
-            answer: 'Answer to newsletter subscription question',
+            answer: 'We offer free installation to all customers within 200 metres from our Network',
         },
         {
             question: 'Where are your offices located?',
-            answer: 'Answer to credit card information question',
+            answer: 'Honey Pot Road, Raquel Plaza Room 203',
         },
 
     ];

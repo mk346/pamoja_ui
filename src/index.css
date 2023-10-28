@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,4 +9,249 @@
 }
 body {
     background-color: black;
+}
+:root {
+--black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+);
+--card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+* {
+scroll-behavior: smooth;
+}
+
+.text-gradient {
+background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+
+.bg-blue-gradient {
+background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+);
+}
+
+.bg-black-gradient {
+background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+);
+}
+
+.bg-black-gradient-2 {
+background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+);
+}
+
+.bg-gray-gradient {
+background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+);
+}
+
+.bg-discount-gradient {
+background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.box-shadow {
+box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.sidebar {
+-webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+}
+
+@keyframes slide-top {
+0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+}
+
+.feature-card:hover {
+background: var(--black-gradient);
+box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+margin-right: 0px;
+}
+
+.feedback-card {
+background: transparent;
+}
+
+.feedback-card:hover {
+background: var(--black-gradient);
+}
+
+.blue__gradient {
+background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+filter: blur(123px);
+}
+
+.pink__gradient {
+background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+filter: blur(900px);
+}
+
+.white__gradient {
+background: rgba(255, 255, 255, 0.6);
+filter: blur(750px);
+}
+
+.btn-send{
+    color: #000 !important;
+    background-color: #ff9900e1 !important;
+    outline: none !important;
+    border-color: #ff9900 !important;
+    font-weight: bold !important;
+    
+}
+
+.bld{
+    font-weight: bold !important;
+}
+
+.my-text{
+    display: flex;
+    width: 80%;
+    font-size: 50px;
+}
+.sec-home{
+    width: 100%;
+    padding-left: 20px;
+}
+
+.text-dimWhite{
+    color: #eceaeace;
+    
+}
+
+.myfont{
+    font-family: 'Poppins';
+}
+
+.dflexsm{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.carousel-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 800px;
+    height: 400px;
+    /* margin-right: 20px; */
+}
+.carousel-img{
+    width: 600px;
+    height: 400px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 7px #666;
+}
+
+.carousel-box{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+padding-right: 50px;
+}
+
+.slide{
+border-radius: 0.5rem;
+box-shadow: 0px 0px 7px #666;
+width: 100%;
+height: 100%;
+}
+
+.arrow{
+position: absolute;
+width: 2rem;
+height: 2rem;
+color: #fff;
+filter: drop-shadow(0px 0px 5px #555);
+}
+.arrow:hover{
+cursor: pointer;
+}
+.arrow-left{
+left: 1rem;
+}
+.arrow-right{
+right: 1rem;
+}
+.indicators{
+display: flex;
+position: absolute;
+bottom: 1rem;
+}
+.indicator{
+background-color: #fff;
+height: 0.5rem;
+width: 0.5rem;
+border-radius: 100%;
+border: none;
+outline: none;
+box-shadow: 0px 0px 5px #555;
+margin: 0 0.2rem;
+cursor: pointer;
+}
+.slide-hidden{
+display: none;
+}
+
+.pd-l{
+    margin-left: 50px;
+    padding-right: 50px;
 }

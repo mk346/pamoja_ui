@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Accordion from "../components/Accordion";
 import Reviews from "../components/Reviews";
 import '../styles.css';
+import styles from '../mystyle'
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbarx";
 
@@ -15,7 +16,9 @@ function Home() {
     return(
         <div>
             <Navbar/>
-            <Hero />
+            <div className='w-full'>
+                <Hero />
+            </div>
             <About />
             <Cards />
             <Accordion />

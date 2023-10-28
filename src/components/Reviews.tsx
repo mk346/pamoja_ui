@@ -23,7 +23,7 @@ export default function Reviews() {
                     imageSrc={boy}
                     price="MOSES OMONDI"
                     color="gray"
-                    description="I have been using Pamoja Home Fiber for over a year now, and I couldn't be happier with the service. The internet speed is consistently fast, allowing me to stream movies, work from home, and video call without any interruptions"
+                    description="I have been using Pamoja Home Fiber for a while now. The internet speed is consistently fast, allowing me to stream movies, work from home, and video call without any interruptions"
                 />
 
                 <ReviewCard
