@@ -26,7 +26,7 @@ const Cable = () => {
                         <p
                             className="hidden max-w-lg txt-cl md:mt-6 md:block md:text-lg md:leading-relaxed font-bold flex justify-center" // Add 'flex justify-center' classes
                         >
-                            At Pamoja Home Fiber Company, we strive to provide you with the best-in-class fiber optic internet services for your home. Experience the power of seamless connectivity and explore a world of endless possibilities
+                            Sustainably connecting you to the World. Welcome to the greener side of the internet with Pamoja Home Fiber <br/> We have a Package for Everyone
                         </p>
 
 

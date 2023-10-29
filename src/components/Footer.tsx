@@ -15,7 +15,7 @@ const Footer = () => {
                     <h1 className="w-full md:w-2/3 sm:w-2/5 text-orange-500">Pamoja Home Fibre, Your Complete Digital Experience!</h1>
                 </div>
                 <div className="flex mt-8 flex-col md:flex-row md:justify-between">
-                    <p className="w-full md:w-2/3 text-white">Transforming the Way You Connect, Communicate, and Collaborate with Fiber Optics
+                    <p className="w-full md:w-2/3 text-white">Transforming the Way You Connect, Communicate, and Collaborate with Your Loved Ones. Tuko Pamoja
                     </p>
                     <div className="w-44 pt-6 md:pt-0">
                         <a href="/Contact" className="bg-orange-500 justify-center text-center text-black rounded-lg shadow px-10 py-3 flex items-center no-underline">Contact
