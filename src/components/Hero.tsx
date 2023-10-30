@@ -82,7 +82,7 @@ const images = [
 
 function Hero() {
     return (
-        <section className={`bg-slate-900 flex md:flex-row flex-col ${styles.paddingY} sec-home`}>
+        <section className='bg-slate-900 flex md:flex-row flex-col sec-home'>
             <div className='container-wrap'>
                 <div className='sub-div flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 hide-div'>
                     <img src={logo_1} alt="internet"  className='w-[52px] h-[32px]'/>
@@ -101,7 +101,7 @@ function Hero() {
                     </span>
                 </div>
                 <div className='div-wrap'>
-                    <h1 className='flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px]'>
+                    <h1 className='mytext flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px]'>
                         The Next <br className='sm:block hidden'/>
                         {" "}
                         <span className='text-orange-500 my-text'>Generation</span> 

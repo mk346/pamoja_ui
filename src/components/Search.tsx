@@ -290,10 +290,10 @@ const Search = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+                        <div className="w-full max-w-[370px] px-4 lg:w-1/2 xl:w-5/12">
                             <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
-                                <form>
-                                    <select onChange={handleCountyChange}  name="county" style={{backgroundColor: "#f97316"}} className="block w-60 h-10 mt-1 mb-5 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" >
+                                <form className="form-box">
+                                    <select onChange={handleCountyChange}  name="county" style={{backgroundColor: "#f97316"}} className="form-ctr block w-60 h-10 mt-1 mb-5 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" >
                                         <option value={""}>Choose your Town</option>
                                         {Object.keys(counties).map((county, i) => {
                                             return (
@@ -305,7 +305,7 @@ const Search = () => {
                                             );
                                         })}
                                     </select>
-                                    <select onChange={handleDistrictChange} onBlur={() => window.location.reload()} name="county" className="block w-g0 h-10 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" style={{backgroundColor: "#f97316"}}>
+                                    <select onChange={handleDistrictChange} onBlur={() => window.location.reload()} name="county" className="form-ctr block w-g0 h-10 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" style={{backgroundColor: "#f97316"}}>
                                         <option value={""}>Choose an Area / Estate  in your Town</option>
                                         {county &&
                                             Object.keys(counties[county]["districts"]).map((district, i) => {

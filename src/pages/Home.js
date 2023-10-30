@@ -16,9 +16,7 @@ function Home() {
     return(
         <div>
             <Navbar/>
-            <div className='w-full'>
-                <Hero />
-            </div>
+            <Hero />
             <About />
             <Cards />
             <Accordion />
