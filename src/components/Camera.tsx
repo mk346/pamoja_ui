@@ -3,7 +3,7 @@ import React from 'react'
 import camera from '../assets/eye.jpg';
 
 
-import { createStyles, Container, Title, Text, Button, rem, ColorPicker } from '@mantine/core';
+import { createStyles, Container, Title, Text, Button, rem} from '@mantine/core';
 import { Link } from 'react-router-dom';
 
     const useStyles = createStyles((theme) => ({
@@ -113,7 +113,7 @@ import { Link } from 'react-router-dom';
                                 gradient={{ from: 'pink', to: 'yellow' }}
                                 size="xl"
                                 className={classes.control }
-                                color="cyan"
+                                color="orange"
                                 mt={40}
                                 component={Link} // Use the Link component from React Router
                                 to="/Contact"    // Specify the link destination

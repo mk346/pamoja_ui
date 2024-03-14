@@ -23,7 +23,7 @@ function Internet() {
             key: uuidv4(),
             content: (
                 <Card imagen={bronzeImage}
-                title="COPPER"
+                title="STARTER"
                 Text="Perfect for Internet Surfing and Emailing.
                 "
                 />
@@ -35,7 +35,7 @@ function Internet() {
             key: uuidv4(),
             content: (
                 <Card imagen={silverImage}
-                      title="BRONZE"
+                      title="BASIC"
                       Text="Perfect for HD Streaming, Fast Web Browsing and Fast Video Downloading"  />
 
             )
@@ -44,7 +44,7 @@ function Internet() {
             key: uuidv4(),
             content: (
                 <Card imagen={goldImage}
-                      title="SILVER"
+                      title="PREMIUM"
                       Text="CCTV Capability, Online Gaming and HD Streaming"  />
 
             )
@@ -53,7 +53,7 @@ function Internet() {
             key: uuidv4(),
             content: (
                 <Card imagen={platinumImage}
-                      title="GOLD"
+                      title="PLATINUM"
                       Text="Perfect for Online Gaming, CCTV Management, Video Conferencing, and Multiple Device Streaming"  />
             )
         },
@@ -61,7 +61,7 @@ function Internet() {
             key: uuidv4(),
             content: (
                 <Card imagen={diamondImage}
-                      title="PLATINUM"
+                      title="TITANIUM"
                       Text="Perfect for Online Gaming, CCTV Management, Video Conferencing, and Multiple HD Device Streaming"  />
             )
         },
@@ -69,7 +69,7 @@ function Internet() {
             key: uuidv4(),
             content: (
                 <Card imagen={sixty}
-                      title="DIAMOND"
+                      title="ULTIMATE"
                       Text="Unleash the full potential of your Online Gaming, 4K Video Streaming and Video Conferencing"  />
             )
         }

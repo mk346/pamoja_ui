@@ -346,6 +346,12 @@ filter: blur(750px);
     display: block;
 }
 /* media quaries */
+@media screen and (max-width: 1024px){
+    .hide-div{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 900px){
     .sec-home{
         padding: 1px;

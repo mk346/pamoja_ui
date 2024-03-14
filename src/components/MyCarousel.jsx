@@ -3,6 +3,7 @@ import styles from '../mystyle'
 import {ArrowBigLeft, ArrowBigRight} from "lucide-react";
 
 
+
 const MyCarousel = ({ slides }) => {
     const [slide, setSlide] = useState(0)
     const autoScroll = true

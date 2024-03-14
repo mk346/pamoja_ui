@@ -74,6 +74,22 @@ const counties = {
                 name: "Tuskys",
                 wifiCoverage: true,
             },
+            "olerai": {
+                name: "Olerai",
+                wifiCoverage: true,
+            },
+            "maasai": {
+                name: "Maasai Lodge",
+                wifiCoverage: true,
+            },
+            "hornbill": {
+                name: "Hornbill Road",
+                wifiCoverage: true,
+            },
+            "chapchap": {
+                name: "Tuskys Chap Chap",
+                wifiCoverage: true,
+            },
         }
     },
     kajiado: {
@@ -123,12 +139,61 @@ const counties = {
                 name: "Gategi",
                 wifiCoverage:true,
             },
-            olemishish: {
+            "olemishish": {
                 name: "Ole Mishish",
                 wifiCoverage:true,
             },
-            kunde: {
+            "kunde": {
                 name: "Kunde Road",
+                wifiCoverage:true,
+            },
+            "kiserian_primary": {
+                name: "Kiserian Primary",
+                wifiCoverage:true,
+            }
+            ,
+            "kiserian_pcea": {
+                name: "Kiserian PCEA",
+                wifiCoverage:true,
+            }
+            ,
+            "Quickmart Kiserian": {
+                name: "Quickmart Kiserian",
+                wifiCoverage:true,
+            }
+            ,
+            "Kahuho": {
+                name: "Kahuho",
+                wifiCoverage:true,
+            }
+            ,
+            "Migaa Road": {
+                name: "Migaa Road",
+                wifiCoverage:true,
+            }
+            ,
+            "Orchard Heights": {
+                name: "Orchard Heights",
+                wifiCoverage:true,
+            }
+            ,
+            "Gishagi": {
+                name: "Gishagi",
+                wifiCoverage:true,
+            }
+            ,
+            "Amani Lane": {
+                name: "Amani Lane",
+                wifiCoverage:true,
+            }
+            ,
+            "Ngowa Estate": {
+                name: "Ngowa Estate",
+                wifiCoverage:true,
+            }
+            ,
+            "Kiserian Dam": {
+                name: "Kiserian Dam",
                 wifiCoverage:true,
             }
         }
@@ -178,6 +243,10 @@ const counties = {
             },
             "nasieku": {
                 name: "Nasieku",
+                wifiCoverage:true,
+            },
+            "kirkau": {
+                name: "Kirkau",
                 wifiCoverage:true,
             },
         }

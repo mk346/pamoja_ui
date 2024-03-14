@@ -3,81 +3,68 @@ import MyCarousel from './MyCarousel';
 import Typed from 'react-typed';
 import styles from '../mystyle'
 import logo_1 from '../assets/internet_1.png'
-import im_1 from '../assets/im_2.jpg'
-import im_2 from '../assets/im_1.jpg'
-import im_3 from '../assets/im_3.jpg'
-import im_4 from '../assets/im_4.jpg'
-import im_5 from '../assets/im_6.jpg'
-import im_6 from '../assets/im_11.jpg'
-import im_7 from '../assets/myweb_4.jpg'
-import im_8 from '../assets/myweb_5.jpg'
-import im_9 from '../assets/myweb_6.jpg'
-import im_10 from '../assets/im_8.jpg'
-import im_11 from '../assets/im_9.jpg'
-import im_12 from '../assets/im_10.jpg'
+import s1 from '../assets/slides/s1.jpg'
+import s2 from '../assets/slides/s2.jpg'
+import s3 from '../assets/slides/s3.jpg'
+import s4 from '../assets/slides/s4.jpg'
+import s5 from '../assets/slides/s5.jpg'
+import s6 from '../assets/slides/s6.jpg'
+import s7 from '../assets/slides/s7.jpg'
+import s8 from '../assets/slides/s8.jpg'
+import s9 from '../assets/slides/s9.jpg'
+import s10 from '../assets/slides/s10.jpg'
 
 const images = [
 {
-    src: im_1,
+    src: s1,
     alt: "image_1"
 
 },
 {
-    src: im_2,
+    src: s2,
     alt: "image_2"
 
 },
 {
-    src: im_3,
+    src: s3,
     alt: "image_3"
 
 },
 {
-    src: im_4,
+    src: s4,
     alt: "image_4"
 
 },
 {
-    src: im_5,
+    src: s5,
     alt: "image_5"
 
 },
 {
-    src: im_6,
+    src: s6,
     alt: "image_6"
 
 },
 {
-    src: im_7,
+    src: s7,
     alt: "image_7"
 
 },
 {
-    src: im_8,
+    src: s8,
     alt: "image_8"
 
 },
 {
-    src: im_9,
+    src: s9,
     alt: "image_9"
 
 },
 {
-    src: im_10,
+    src: s10,
     alt: "image_10"
 
 },
-{
-    src: im_11,
-    alt: "image_11"
-
-},
-{
-    src: im_12,
-    alt: "image_12"
-
-},
-
 ];
 
 function Hero() {
@@ -92,7 +79,7 @@ function Hero() {
                         "Welcome home, netizen! Experience the web like never before with Pamoja Home Fiber",
                         "We bring the World to your Doorstep",
                         "Call us Now for Immediate Connection at 07 99 745 714",
-                        "At Pamoja Home Fiber, we prioritize quality, speed, and your satisfaction. Welcome aboard!"
+                        "At Pamoja Home Fiber, we prioritize quality, speed, and your satisfaction."
                         ]}
                         typeSpeed = {150}
                         backSpeed = {100}
