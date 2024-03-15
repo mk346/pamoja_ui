@@ -1,15 +1,18 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 // import { Form } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import emailjs from '@emailjs/browser';
-
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 const Contacts = () => {
-
+        // const captchaWidth = 900;
+        // const containerWidth = (".g-recaptcha").width();
+        // console.log(containerWidth)
+        const [value, setValue] = useState(null)
         const form = useRef();
         const sendEmail = (e) => {
             e.preventDefault();
@@ -143,7 +146,10 @@ const Contacts = () => {
                                             <Form.Control as="textarea" name='message' placeholder='type message...' style={{height: '100px'}}/>
                                         </Form.Group>
                                     </Row>
-                                    <Button type='submit' variant='info' className='btn-send'>Send Message</Button>
+                                    <div className='captcha' style={{transform:"scale(0.80)", transformOrigin:"0 0"}}>
+                                        <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} onChange={(val) => setValue(val)}/> 
+                                    </div>
+                                    <Button disabled={!value} type='submit' variant='info' className='btn-send'>Send Message</Button>
 
                                 </form>
 
@@ -966,6 +972,7 @@ const Contacts = () => {
         </section>
     </>
 );
+
 };
 
 export default Contacts;

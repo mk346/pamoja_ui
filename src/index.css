@@ -345,6 +345,12 @@ filter: blur(750px);
     width: 100%;
     display: block;
 }
+
+.captcha{
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 1rem;
+}
 /* media quaries */
 @media screen and (max-width: 1024px){
     .hide-div{
@@ -432,5 +438,9 @@ filter: blur(750px);
 
     .container{
         width: 80% !important;
+    }
+    .captcha{
+        width: 50%;
+        float: left;
     }
 }
