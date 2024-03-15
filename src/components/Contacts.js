@@ -7,13 +7,14 @@ import Row from 'react-bootstrap/Row';
 import emailjs from '@emailjs/browser';
 
 
+
 const Contacts = () => {
 
         const form = useRef();
         const sendEmail = (e) => {
             e.preventDefault();
             
-            emailjs.sendForm('service_1go74de','template_qrgnrfq',form.current,'zNkLTHTxFvNlXK4De').then((result) => {
+            emailjs.sendForm(process.env.REACT_APP_SERVICE_ID,process.env.REACT_APP_TEMPLATE_ID,form.current,process.env.REACT_APP_USER_ID).then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
