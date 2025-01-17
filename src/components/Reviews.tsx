@@ -1,4 +1,3 @@
-import React from "react";
 import ReviewCard from "./ReviewCard";
 import girl from "../assets/girl.jpg";
 import boy from "../assets/boy.jpg";

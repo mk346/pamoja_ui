@@ -1,4 +1,3 @@
-import React from "react";
 import Wifi from '../assets/homewifi.jpeg'
 import Cctv from '../assets/homecctv.jpeg'
 import Tv from '../assets/hometv.jpeg'

@@ -1,4 +1,3 @@
-import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -18,7 +17,7 @@ function Navbarx() {
                         <Nav.Link href="/Internet">Internet</Nav.Link>
                         <Nav.Link href="/Services">Services</Nav.Link>
                         <Nav.Link href="/Contact">Contact</Nav.Link>
-
+                        <Nav.Link href="https://pamojafiber.phpradius.com/" target="_blank">Client Portal</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

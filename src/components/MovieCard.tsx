@@ -1,5 +1,5 @@
 import Styles from "./Card.module.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useSpring, animated } from "react-spring";
 // import Button from "./Button";
 

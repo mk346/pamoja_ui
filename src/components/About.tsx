@@ -1,4 +1,3 @@
-import React from "react";
 import headphones from '../assets/headphones.jpg';
 import office from '../assets/office.jpg';
 import couch from '../assets/couch.jpg';

@@ -1,4 +1,3 @@
-import React from "react";
 import "keen-slider/keen-slider.min.css";
 import "../styles.css";
 import { v4 as uuidv4 } from "uuid";

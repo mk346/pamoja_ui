@@ -1,4 +1,3 @@
-import React from "react";
 import global from '../assets/global.jpg';
 
 

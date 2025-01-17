@@ -1,4 +1,3 @@
-//import React from 'react'
 import styles from "../mystyle.js"
 import arrowup from "../assets/arrow-up.svg"
 

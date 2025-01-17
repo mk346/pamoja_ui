@@ -1,4 +1,3 @@
-import React from 'react'
 // import vision from '../assets/vision.jpg';
 import camera from '../assets/eye.jpg';
 

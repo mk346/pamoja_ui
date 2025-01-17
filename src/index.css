@@ -4,11 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.header {
 
-}
 body {
     background-color: black;
+    font-family: 'Barlow', sans-serif;
 }
 :root {
 --black-gradient: linear-gradient(
@@ -22,6 +21,7 @@ body {
 
 * {
 scroll-behavior: smooth;
+font-family: 'Barlow', sans-serif;
 }
 *,
 *::before,
@@ -153,10 +153,11 @@ filter: blur(750px);
 .sec-home{
     width: 100% !important;
     padding-left: 20px;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-self: center;
     flex-wrap: wrap;
+    flex: 1 !important;
     overflow: hidden;
 }
 
@@ -373,7 +374,7 @@ filter: blur(750px);
     .carousel-wrap{
         width: 100%;
         padding: 1px;
-        margin: 1px;
+        margin: 10px;
     }
     .hide-div{
         display: none;
@@ -389,6 +390,7 @@ filter: blur(750px);
 @media screen and (max-width: 700px){
     .container-wrap{
         width: 100%;
+        margin: 10px;
         padding-top: 10px;
         padding-left: 1px;
         padding-right: 1px;
@@ -404,6 +406,7 @@ filter: blur(750px);
     }
     .div-wrap{
         padding-top: 20px;
+        margin: 10px;
     }
     .hide-div{
         display: none;
@@ -424,7 +427,7 @@ filter: blur(750px);
     } */
     .container-wrap{
         padding: 1px;
-        margin: 1px;
+        margin: 10px;
     }
     .carousel-wrap{
         margin-top: 20px;
@@ -432,12 +435,12 @@ filter: blur(750px);
     }
 
     .carousel-box{
-        width: 80%;
+        width: 100%;
         padding: 10px;
     }
 
     .container{
-        width: 80% !important;
+        width: 100% !important;
     }
     .captcha{
         width: 50%;

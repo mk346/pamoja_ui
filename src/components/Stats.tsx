@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Stats = () => {
     return (
@@ -7,7 +6,7 @@ const Stats = () => {
             <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-3xl font-bold text-orange-500 sm:text-4xl">
-                        Wireless Connectivity
+                        Fiber Connectivity
                     </h2>
 
                     <p className="mt-4 text-white sm:text-xl">
@@ -29,7 +28,7 @@ const Stats = () => {
                             <dd
                                 className="text-4xl font-extrabold text-blue-600 dark:text-white md:text-5xl"
                             >
-                                5OK
+                                5K
                             </dd>
                         </div>
 
@@ -45,7 +44,7 @@ const Stats = () => {
                             <dd
                                 className="text-4xl font-extrabold text-white dark:text-white md:text-5xl"
                             >
-                                30K
+                                5K
                             </dd>
                         </div>
 
@@ -61,7 +60,7 @@ const Stats = () => {
                             <dd
                                 className="text-4xl font-extrabold text-blue-600 dark:text-white md:text-5xl"
                             >
-                                2K
+                                20
                             </dd>
 
                         </div>

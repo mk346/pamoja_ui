@@ -1,4 +1,3 @@
-import React from 'react';
 import { MantineTheme, createStyles, Accordion, Grid, Col, Container, Title, Image } from '@mantine/core';
 import photo from "../assets/photo.jpg";
 
@@ -64,7 +63,7 @@ export default function App() {
     const placeholderTexts: PlaceholderText[] = [
         {
             question: 'How can I reset my password?',
-            answer: 'Contact Our Customer Support for guidance. Call us on 0799745714',
+            answer: 'Contact Our Customer Support for guidance. Call us on 02076530000 or WhatsApp 0799745714',
         },
         {
             question: 'How long does installation process take?',

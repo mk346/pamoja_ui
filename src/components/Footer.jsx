@@ -1,4 +1,3 @@
-import React from "react";
 
 const d = new Date()
 
@@ -32,6 +31,7 @@ const Footer = () => {
                         <a className="hidden md:block cursor-pointer text-white hover:text-orange-500 uppercase no-underline" href="/Internet">Internet</a>
                         <a className="hidden md:block cursor-pointer text-white hover:text-orange-500 uppercase no-underline" href="/Services">Services</a>
                         <a className="hidden md:block cursor-pointer text-white hover:text-orange-500 uppercase no-underline" href="/Contact">Contact</a>
+                        <a className="hidden md:block cursor-pointer text-white hover:text-orange-500 uppercase no-underline" href="https://pamojafiber.phpradius.com/" rel="noreferrer" target="_blank">Client Portal</a>
                         <div className="flex flex-row space-x-8 items-center justify-between">
                             <a href="https://www.facebook.com/pamojahomefiber/" rel="noreferrer" target="_blank">
                                 <svg width="20" height="20" viewBox="0 0 6 12" fill="none"

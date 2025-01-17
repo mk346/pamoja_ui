@@ -1,4 +1,3 @@
-import React from "react";
 import global from '../assets/global.jpg';
 
 const Cctv = () => {
@@ -8,7 +7,7 @@ const Cctv = () => {
                 className="overflow-hidden bg-cover bg-black bg-top bg-no-repeat"
                 style={{
                     backgroundImage: `url(${global})`,
-                    height: '450px',
+                    height: '300px',
                     width: '100%', // Adjust the width to fit the container
                 }}
             >
